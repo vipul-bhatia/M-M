@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 //pages
 import './pages/mainPage.dart';
+import './pages/helpAndFeedback.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +31,8 @@ class MyHomePage extends StatelessWidget{
       initialRoute: '/',
       
       routes: {
-        '/':(context) => mainPage()
+        '/':(context) => mainPage(),
+        '/helpFeedback':(context) => helpFeedback(),
       },
     );
   }

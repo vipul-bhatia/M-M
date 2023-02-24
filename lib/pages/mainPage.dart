@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 import 'package:flutter/material.dart';
 
 class mainPage extends StatelessWidget {
@@ -27,6 +15,9 @@ class mainPage extends StatelessWidget {
           Card(
             child: ListTile(
               title: Text('FeedBackPage'),
+              onTap: () {
+                Navigator.pushNamed(context, '/helpFeedback');
+              },
             ),
           ),
          ],),
